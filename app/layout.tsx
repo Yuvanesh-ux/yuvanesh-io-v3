@@ -6,7 +6,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Yuvanesh Anand',
   description: 'Security Engineer & AI Developer - Portfolio',
-  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

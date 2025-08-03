@@ -6,7 +6,6 @@ import { useState, useEffect, useRef } from "react"
 import { VT323 } from "next/font/google"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import { CiVirus } from "react-icons/ci"
 
 // Font setup for DOS aesthetic
 const vt323 = VT323({
@@ -96,9 +95,13 @@ const HomeView = ({ onCommand }: { onCommand: CommandHandler }) => {
 
       {/* Bottom: Logo */}
       <div className="w-full flex justify-start pl-8 mt-8">
-        <CiVirus 
-          className="text-green-400 w-32 h-32 md:w-40 md:h-40"
-          aria-label="Yuvanesh Anand Logo"
+        <Image
+          src="/logo.png"
+          alt="Yuvanesh Anand Logo"
+          width={512}
+          height={128}
+          className="w-full max-w-lg"
+          priority
         />
       </div>
     </div>
