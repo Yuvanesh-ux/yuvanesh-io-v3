@@ -109,22 +109,47 @@ const HomeView = ({ onCommand }: { onCommand: CommandHandler }) => {
 }
 
 const NomicView = ({ onCommand }: { onCommand: CommandHandler }) => (
-  <div className="text-lg md:text-xl space-y-4 break-words">
-    <div className="pl-4 space-y-2">
-      <p>• Atlas Platform: Developed a real-time platform for data visualization handling billions of data points.</p>
-      <p>
-        • Data Pipeline: Constructed a data pipeline for the GPT4ALL model (LLaMa architecture), trained language models
-        on 800,000+ high-quality examples.
-      </p>
-      <p>
-        • Web Migration: Worked on migrating Nomic enterprise web apps to Next.JS, optimizing UI/UX and refactoring
-        legacy code.
-      </p>
-      <p>
-        • GPT4ALL Development: Steered the creation of the open-source GPT4ALL platform to over 60K stars on Github.
-      </p>
-      <p>• Company Relations: Managed relations with other companies regarding collaborations with GPT4ALL.</p>
+  <div className="text-xl md:text-2xl space-y-4">
+    <p>Volume in drive C is YUVANESH_ANAND</p>
+    <p>Directory of C:\\experience\\nomic</p>
+    <br />
+    <div className="space-y-3">
+      <div className="text-yellow-400 mb-2">
+        <p>DEVELOPER - NOMIC (APRIL 2022 - MAY 2023):</p>
+      </div>
+      
+      <div className="space-y-3 text-lg">
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Atlas Platform Development:</strong> Developed a real-time platform for data visualization handling billions of data points, creating scalable infrastructure for massive dataset processing and interactive exploration.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>GPT4ALL Data Pipeline:</strong> Constructed a comprehensive data pipeline for the GPT4ALL model (LLaMA architecture), training language models on 800,000+ high-quality examples and optimizing model performance.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Enterprise Web Migration:</strong> Led migration of Nomic enterprise web applications to Next.js, optimizing UI/UX design patterns and refactoring legacy codebases for improved performance and maintainability.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Open-Source Platform Leadership:</strong> Steered the creation and growth of the GPT4ALL open-source platform, achieving over 60,000 GitHub stars and building a thriving developer community around accessible AI.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Strategic Partnership Management:</strong> Managed cross-company relationships and collaborations for GPT4ALL ecosystem expansion, facilitating technical partnerships and community growth initiatives.</span>
+        </p>
+      </div>
+      
+      <div className="mt-4 text-sm text-gray-400">
+        <p>150+ citations    70K+ GitHub stars</p>
+      </div>
     </div>
+    
     <div className="mt-8">
       <a onClick={() => onCommand("experience")} className="flex items-center gap-2 cursor-pointer group text-2xl">
         <span className="text-green-400">&gt;</span>
@@ -136,12 +161,44 @@ const NomicView = ({ onCommand }: { onCommand: CommandHandler }) => (
 )
 
 const PensarView = ({ onCommand }: { onCommand: CommandHandler }) => (
-  <div className="text-lg md:text-xl space-y-4">
-    <div className="pl-4 space-y-2">
-      <p>• Currently working to secure AI Agents from threats.</p>
-      <p>• Placeholder text describing my role and responsibilities at Pensar.</p>
-      <p>• More placeholder text about achievements and technologies used.</p>
+  <div className="text-xl md:text-2xl space-y-4">
+    <p>Volume in drive C is YUVANESH_ANAND</p>
+    <p>Directory of C:\\experience\\pensar</p>
+    <br />
+    <div className="space-y-3">
+      <div className="text-yellow-400 mb-2">
+        <p>Developer - PENSAR (MAY 2023 - PRESENT):</p>
+      </div>
+      
+      <div className="space-y-3 text-lg">
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Security Platform Development:</strong> Architected and implemented core features for enterprise security vulnerability management platform, serving dozens of organizations and processing millions of lines of code using Next.js, TypeScript, and PostgreSQL.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>AI-Powered Patch Generation:</strong> Built automated vulnerability patching system with 95% success rate, integrating LLM-based code analysis to generate security fixes across multiple programming languages and frameworks.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Infrastructure and Database Management:</strong> Designed scalable AWS infrastructure using SST (Serverless Stack), managed PostgreSQL database migrations, and implemented real-time WebSocket updates, reducing system response times by 40%.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Full-Stack Feature Development:</strong> Delivered 15+ major features including project management dashboard, dependency scanning, GitHub/GitLab integrations, and rule attribution system, directly contributing to revenue.</span>
+        </p>
+        
+        <p className="flex items-start">
+          <span className="text-green-400 mr-2">•</span>
+          <span><strong>Agentic AI Development:</strong> Developed 5+ production-grade AI agents for vulnerability detection, patch generation, and code analysis, processing 10,000+ security issues monthly and achieving 90%+ accuracy in automated triage and remediation workflow.</span>
+        </p>
+      </div>
+      
     </div>
+    
     <div className="mt-8">
       <a onClick={() => onCommand("experience")} className="flex items-center gap-2 cursor-pointer group text-2xl">
         <span className="text-green-400">&gt;</span>
