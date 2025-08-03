@@ -16,31 +16,33 @@ const vt323 = VT323({
 
 // --- ASCII Info Box Component ---
 const InfoBox = () => (
-  <div className="text-lg leading-tight">
-    <pre className="m-0 p-0">┌──────────────────────────┐</pre>
-    <pre className="m-0 p-0">│ Currently @ Pensar │</pre>
-    <pre className="m-0 p-0">│ Defending the web │</pre>
-    <pre className="m-0 p-0">│ against vulnerable code │</pre>
-    <pre className="m-0 p-0">│--------------------------│</pre>
-    <div className="flex">
-      <pre className="m-0 p-0">│</pre>
-      <div className="flex flex-grow justify-around items-center py-1 px-2">
-        <a href="#" aria-label="GitHub" className="hover:opacity-75 transition-opacity">
-          <Image src="/github-pixel.png" alt="GitHub" width={24} height={24} />
+  <div className={cn("text-lg leading-tight relative", vt323.className)}>
+    <pre className={cn("m-0 p-0", vt323.className)}>┌── ── ── ── ── ── ── ── ── ──┐</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│ Currently @ Pensar                      │</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│ Defending the web                       │</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│ against vulnerable code                 │</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│                                         │</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│                                         │</pre>
+
+    <div className="relative">
+      <pre className={cn("m-0 p-0", vt323.className)}>│                                         │</pre>
+      <div className="absolute inset-0 flex justify-center items-center gap-4 px-4">
+        <a href="https://github.com/yuvanesh-ux" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:opacity-75 transition-opacity">
+          <Image src="/github-pixel.png" alt="GitHub" width={24} height={24} className="pixel-art-icon" />
         </a>
-        <a href="#" aria-label="Twitter" className="hover:opacity-75 transition-opacity">
-          <Image src="/twitter-pixel.png" alt="Twitter" width={24} height={24} />
+        <a href="https://twitter.com/Yuvaaa___" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter" className="hover:opacity-75 transition-opacity">
+          <Image src="/twitter-pixel.png" alt="X/Twitter" width={24} height={24} className="pixel-art-icon" />
         </a>
-        <a href="#" aria-label="LinkedIn" className="hover:opacity-75 transition-opacity">
-          <Image src="/linkedin-pixel.png" alt="LinkedIn" width={24} height={24} />
+        <a href="https://www.linkedin.com/in/yuvanesh-anand-760521233/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:opacity-75 transition-opacity">
+          <Image src="/linkedin-pixel.webp" alt="LinkedIn" width={24} height={24} className="pixel-art-icon" />
         </a>
-        <a href="#" aria-label="Substack" className="hover:opacity-75 transition-opacity">
-          <Image src="/substack-pixel.png" alt="Substack" width={24} height={24} />
+        <a href="https://substack.com/@yuvaaaaa" target="_blank" rel="noopener noreferrer" aria-label="Substack" className="hover:opacity-75 transition-opacity">
+          <Image src="/substack-pixel.png" alt="Substack" width={32} height={32} className="pixel-art-icon" />
         </a>
       </div>
-      <pre className="m-0 p-0">│</pre>
     </div>
-    <pre className="m-0 p-0">└──────────────────────────┘</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>│                                         │</pre>
+    <pre className={cn("m-0 p-0", vt323.className)}>└─ ── ── ── ── ── ── ── ──  ──┘</pre>
   </div>
 )
 

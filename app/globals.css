@@ -138,3 +138,11 @@
     opacity: 0;
   }
 }
+
+/* Pixel Art Icons */
+.pixel-art-icon {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  filter: contrast(1.1) brightness(1.05);
+}
