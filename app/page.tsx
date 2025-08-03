@@ -244,10 +244,21 @@ const ExperienceView = ({ onCommand }: { onCommand: CommandHandler }) => (
           Nomic
         </a>
       </p>
+      <p>
+        2024-12-18 127,943{" "}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-green-400 hover:underline"
+        >
+          resume.pdf
+        </a>
+      </p>
       
       <div className="mt-4 text-sm text-gray-400">
         <p>2 Dir(s)   Active employment history</p>
-        <p>0 File(s)   3,285,792,768 bytes free</p>
+        <p>1 File(s)   127,943 bytes   2,285,664,825 bytes free</p>
       </div>
     </div>
     <div className="mt-8">
