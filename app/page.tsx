@@ -157,7 +157,10 @@ const ExperienceView = ({ onCommand }: { onCommand: CommandHandler }) => (
     <p>Volume in drive C is YUVANESH_ANAND</p>
     <p>Directory of C:\\experience</p>
     <br />
-    <div className="space-y-2">
+    <div className="space-y-3">
+      <div className="text-yellow-400 mb-2">
+        <p>WORK EXPERIENCE:</p>
+      </div>
       <p>
         2023-05-01 &lt;DIR&gt;{" "}
         <a
@@ -184,6 +187,11 @@ const ExperienceView = ({ onCommand }: { onCommand: CommandHandler }) => (
           Nomic
         </a>
       </p>
+      
+      <div className="mt-4 text-sm text-gray-400">
+        <p>2 Dir(s)   Active employment history</p>
+        <p>0 File(s)   3,285,792,768 bytes free</p>
+      </div>
     </div>
     <div className="mt-8">
       <a onClick={() => onCommand("home")} className="flex items-center gap-2 cursor-pointer group text-2xl">
@@ -200,31 +208,41 @@ const PublicationsView = ({ onCommand }: { onCommand: CommandHandler }) => (
     <p>Volume in drive C is YUVANESH_ANAND</p>
     <p>Directory of C:\\publications</p>
     <br />
-    <div className="space-y-2">
+    <div className="space-y-3">
+      <div className="text-yellow-400 mb-2">
+        <p>PUBLICATIONS:</p>
+      </div>
       <p>
-        2023-11-10 15,302{" "}
-        <a href="#" className="hover:text-green-400 hover:underline">
-          The_Rise_of_AI_Agents.pdf
+        2023-11-06 42,891{" "}
+        <a 
+          href="https://arxiv.org/abs/2311.04931" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-green-400 hover:underline"
+        >
+          GPT4All_Ecosystem_Open_Source_LLMs.pdf
         </a>
       </p>
+      
+      <div className="text-yellow-400 mt-6 mb-2">
+        <p>BLOG POSTS:</p>
+      </div>
       <p>
-        2023-08-02 8,912{" "}
-        <a href="#" className="hover:text-green-400 hover:underline">
-          Securing_Large_Language_Models.txt
+        2024-07-26 18,547{" "}
+        <a 
+          href="https://yuvaaaaa.substack.com/p/models-can-be-prompted-to-fool-probes" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-green-400 hover:underline"
+        >
+          Models_CAN_be_prompted_to_fool_probes.html
         </a>
       </p>
-      <p>
-        2022-01-15 22,450{" "}
-        <a href="#" className="hover:text-green-400 hover:underline">
-          NextJS_for_Enterprise_Apps.md
-        </a>
-      </p>
-      <p>
-        2021-07-30 12,100{" "}
-        <a href="#" className="hover:text-green-400 hover:underline">
-          Building_Data_Pipelines_at_Scale.html
-        </a>
-      </p>
+      
+      <div className="mt-4 text-sm text-gray-400">
+        <p>2 File(s)    61,438 bytes</p>
+        <p>0 Dir(s)   2,847,263,744 bytes free</p>
+      </div>
     </div>
     <div className="mt-8">
       <a onClick={() => onCommand("home")} className="flex items-center gap-2 cursor-pointer group text-2xl">
@@ -292,14 +310,20 @@ export default function PortfolioPage() {
       )}
       style={{ textShadow: "0 3px 3px rgba(255, 255, 255, 0.35)" }}
     >
+      {/* Monitor Frame Overlay - Highest Z-Index */}
       <div
-        className="fixed inset-0 bg-cover bg-center z-0"
+        className="fixed inset-0 bg-cover bg-center pointer-events-none"
         style={{
-          backgroundImage:
-            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20Project%201-YnrgWVqaSc4syrO9vEQjmYb6TU5pQt.png)",
+          backgroundImage: "url(/cover.png)",
+          zIndex: 9999,
         }}
       />
-      <div className="relative z-10 w-full h-full max-w-6xl mx-auto flex items-center justify-center">
+      
+      {/* CRT Screen Effects - Under Frame but Above Content */}
+      <div className="fixed inset-0 crt-screen" style={{ zIndex: 100 }} />
+      
+      {/* Terminal Content - Normal Z-Index */}
+      <div className="relative z-10 w-full h-full max-w-6xl mx-auto flex items-center justify-center chromatic-aberration">
         <div className="w-full max-w-5xl p-8 md:p-16 h-[85vh] max-h-[650px] overflow-y-auto dos-scrollbar">
           {history.map(({ id, command, Component }) => (
             <div key={id} className="mb-8">
